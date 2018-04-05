@@ -7,20 +7,26 @@
 //
 
 import UIKit
+import RxSwift
 
 class MUSearchViewController: UIViewController {
     @IBOutlet weak var photoSearchBar: UISearchBar!
     @IBOutlet weak var searchResultCollectionView: UICollectionView!
+    
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         photoSearchBar.placeholder = "Write your search word here"
     }
+    
+    @IBAction func runRequest(_ sender: Any) {
+        MUAppManager.getSearchResults(forSearchText: "", success: { })
+    }
 }
 
 extension MUSearchViewController: UISearchControllerDelegate {
-    
 }
 
 extension MUSearchViewController: UICollectionViewDelegate, UICollectionViewDataSource {

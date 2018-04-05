@@ -49,11 +49,20 @@
                                     <outlet property="delegate" destination="joa-YB-yJE" id="892-uB-3wa"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSh-gh-MTZ">
+                                <rect key="frame" x="141.5" y="318.5" width="92" height="30"/>
+                                <state key="normal" title="Send request"/>
+                                <connections>
+                                    <action selector="runRequest:" destination="joa-YB-yJE" eventType="touchUpInside" id="hiG-Y2-ctZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="wSh-gh-MTZ" firstAttribute="centerY" secondItem="Pg6-Oh-Hci" secondAttribute="centerY" id="0gB-eI-eKv"/>
                             <constraint firstItem="wpO-pb-beo" firstAttribute="top" secondItem="mtt-Ht-gwz" secondAttribute="top" id="4zA-pN-hyh"/>
                             <constraint firstAttribute="trailing" secondItem="wpO-pb-beo" secondAttribute="trailing" id="ANE-Ok-NBG"/>
+                            <constraint firstItem="wSh-gh-MTZ" firstAttribute="centerX" secondItem="Pg6-Oh-Hci" secondAttribute="centerX" id="F0B-sL-X6D"/>
                             <constraint firstItem="wpO-pb-beo" firstAttribute="leading" secondItem="mtt-Ht-gwz" secondAttribute="leading" id="SSq-1U-x0L"/>
                             <constraint firstItem="mtt-Ht-gwz" firstAttribute="trailing" secondItem="AcN-WR-cpu" secondAttribute="trailing" id="Van-Sw-GHk"/>
                             <constraint firstItem="AcN-WR-cpu" firstAttribute="top" secondItem="wpO-pb-beo" secondAttribute="bottom" id="jXA-uG-Nyv"/>
