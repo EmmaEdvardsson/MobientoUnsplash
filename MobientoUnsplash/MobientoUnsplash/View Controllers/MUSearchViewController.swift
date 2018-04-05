@@ -29,6 +29,7 @@ class MUSearchViewController: UIViewController {
     
     func setupAppearance() {
         photoSearchBar.placeholder = "Write your search word here"
+        photoSearchBar.barTintColor = UIColor.muGreen()
         searchResultCollectionView.emptyDataSetSource = self
         searchResultCollectionView.emptyDataSetDelegate = self
     }

@@ -23,7 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = searchViewController
         self.window?.makeKeyAndVisible()
         
+        setupAppearance()
+        
         return true
+    }
+    
+    func setupAppearance() {
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).textColor = UIColor.muGreen()
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = UIColor.muGreen()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
