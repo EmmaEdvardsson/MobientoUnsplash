@@ -13,6 +13,7 @@
 		7CCFBB962075FAAA00D69698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CCFBB952075FAAA00D69698 /* Assets.xcassets */; };
 		7CCFBB992075FAAA00D69698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCFBB972075FAAA00D69698 /* LaunchScreen.storyboard */; };
 		7CCFBBA42075FAAA00D69698 /* MobientoUnsplashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCFBBA32075FAAA00D69698 /* MobientoUnsplashTests.swift */; };
+		854A216C5CB27A996A7079C1 /* Pods_MobientoUnsplash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185107725113CBAC2B7E600B /* Pods_MobientoUnsplash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		177F59E303A3A06D305F88C6 /* Pods-MobientoUnsplash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobientoUnsplash.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobientoUnsplash/Pods-MobientoUnsplash.release.xcconfig"; sourceTree = "<group>"; };
+		185107725113CBAC2B7E600B /* Pods_MobientoUnsplash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobientoUnsplash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCFBB8B2075FAAA00D69698 /* MobientoUnsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobientoUnsplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCFBB8E2075FAAA00D69698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CCFBB902075FAAA00D69698 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		7CCFBB9F2075FAAA00D69698 /* MobientoUnsplashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobientoUnsplashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCFBBA32075FAAA00D69698 /* MobientoUnsplashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobientoUnsplashTests.swift; sourceTree = "<group>"; };
 		7CCFBBA52075FAAA00D69698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFEE764753B7AFD2C168168B /* Pods-MobientoUnsplash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobientoUnsplash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobientoUnsplash/Pods-MobientoUnsplash.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				854A216C5CB27A996A7079C1 /* Pods_MobientoUnsplash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0625517ED26BC123CB5EF255 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				185107725113CBAC2B7E600B /* Pods_MobientoUnsplash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7CCFBB822075FAAA00D69698 = {
 			isa = PBXGroup;
 			children = (
 				7CCFBB8D2075FAAA00D69698 /* MobientoUnsplash */,
 				7CCFBBA22075FAAA00D69698 /* MobientoUnsplashTests */,
 				7CCFBB8C2075FAAA00D69698 /* Products */,
+				DF540CBCCA1CF9165B0FE86E /* Pods */,
+				0625517ED26BC123CB5EF255 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +111,15 @@
 			path = MobientoUnsplashTests;
 			sourceTree = "<group>";
 		};
+		DF540CBCCA1CF9165B0FE86E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFEE764753B7AFD2C168168B /* Pods-MobientoUnsplash.debug.xcconfig */,
+				177F59E303A3A06D305F88C6 /* Pods-MobientoUnsplash.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CCFBBA82075FAAA00D69698 /* Build configuration list for PBXNativeTarget "MobientoUnsplash" */;
 			buildPhases = (
+				3D06BA914E36A19885CE1547 /* [CP] Check Pods Manifest.lock */,
 				7CCFBB872075FAAA00D69698 /* Sources */,
 				7CCFBB882075FAAA00D69698 /* Frameworks */,
 				7CCFBB892075FAAA00D69698 /* Resources */,
+				16436762D7945411D7A60C32 /* [CP] Embed Pods Frameworks */,
+				F67FAF09CD7AC26DDA177C51 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +220,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16436762D7945411D7A60C32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MobientoUnsplash/Pods-MobientoUnsplash-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FXKeychain/FXKeychain.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
+				"${BUILT_PRODUCTS_DIR}/Wrap/Wrap.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FXKeychain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Wrap.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobientoUnsplash/Pods-MobientoUnsplash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D06BA914E36A19885CE1547 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobientoUnsplash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F67FAF09CD7AC26DDA177C51 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobientoUnsplash/Pods-MobientoUnsplash-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7CCFBB872075FAAA00D69698 /* Sources */ = {
@@ -351,6 +440,7 @@
 		};
 		7CCFBBA92075FAAA00D69698 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFEE764753B7AFD2C168168B /* Pods-MobientoUnsplash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,6 +456,7 @@
 		};
 		7CCFBBAA2075FAAA00D69698 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 177F59E303A3A06D305F88C6 /* Pods-MobientoUnsplash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

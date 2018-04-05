@@ -1,0 +1,6 @@
+framework module Pods_MobientoUnsplash {
+  umbrella header "Pods-MobientoUnsplash-umbrella.h"
+
+  export *
+  module * { export * }
+}
