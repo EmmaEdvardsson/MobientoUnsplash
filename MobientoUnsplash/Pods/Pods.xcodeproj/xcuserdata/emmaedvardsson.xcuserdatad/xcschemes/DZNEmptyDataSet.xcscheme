@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9C0C43167A156D865D49AB9ED4EEE849"
-               BlueprintName = "SVProgressHUD"
+               BlueprintIdentifier = "D386C75EFD4F03725E4EFB866B600B9A"
+               BlueprintName = "DZNEmptyDataSet"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SVProgressHUD.framework">
+               BuildableName = "DZNEmptyDataSet.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

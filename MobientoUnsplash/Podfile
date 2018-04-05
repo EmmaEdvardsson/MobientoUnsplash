@@ -17,6 +17,7 @@ end
 
 def ui_pods
     pod 'SVProgressHUD', '~> 2.0'
+    pod 'DZNEmptyDataSet', '~> 1.8'
 end
 
 target 'MobientoUnsplash' do

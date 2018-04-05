@@ -40,7 +40,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ybs-Ut-lwE">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbnailPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="Ybs-Ut-lwE">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                 </imageView>
                                             </subviews>
@@ -129,5 +129,6 @@
     </scenes>
     <resources>
         <image name="close" width="24" height="24"/>
+        <image name="thumbnailPlaceholder" width="100" height="100"/>
     </resources>
 </document>

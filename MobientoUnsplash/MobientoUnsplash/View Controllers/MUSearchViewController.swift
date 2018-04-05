@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import DZNEmptyDataSet
 
 class MUSearchViewController: UIViewController {
     @IBOutlet weak var photoSearchBar: UISearchBar!
@@ -24,12 +25,14 @@ class MUSearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupAppearance()
         setupBindings()
+        setupAppearance()
     }
     
     func setupAppearance() {
         photoSearchBar.placeholder = "Write your search word here"
+        searchResultCollectionView.emptyDataSetSource = self
+        searchResultCollectionView.emptyDataSetDelegate = self
     }
     
     fileprivate func setupBindings() {
@@ -59,6 +62,10 @@ class MUSearchViewController: UIViewController {
                 self.searchResultCollectionView.reloadData()
             }
         })
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        photoSearchBar.endEditing(true)
     }
 }
 
@@ -95,5 +102,23 @@ extension MUSearchViewController: UICollectionViewDelegate, UICollectionViewData
         
         focusViewController.imageUrl = photosArray[indexPath.row].regularUrl
         self.present(focusViewController, animated: true, completion: nil)
+    }
+}
+
+extension MUSearchViewController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
+    func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+        return NSAttributedString(string: "No images to show")
+    }
+    
+    func description(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+        return NSAttributedString(string: "Write a search word in the search bar, and hope for some nice result")
+    }
+    
+    func image(forEmptyDataSet scrollView: UIScrollView!) -> UIImage! {
+        return UIImage(named: "noResultImage")
+    }
+    
+    func emptyDataSet(_ scrollView: UIScrollView!, didTap view: UIView!) {
+        self.photoSearchBar.resignFirstResponder()
     }
 }

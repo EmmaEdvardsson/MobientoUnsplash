@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.0)
+  - DZNEmptyDataSet (1.8.1)
   - FXKeychain (1.5.3)
   - Kingfisher (4.5.0)
   - RxCocoa (4.1.2):
@@ -11,6 +12,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - DZNEmptyDataSet (~> 1.8)
   - FXKeychain (~> 1.5)
   - Kingfisher (~> 4.5.0)
   - RxCocoa (~> 4.0)
@@ -21,6 +23,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FXKeychain: 2fe54573946ffef634f4e2a2851e6c8f4ea15e76
   Kingfisher: 26ae0473102b77b575da51960c932431e3745407
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
@@ -29,6 +32,6 @@ SPEC CHECKSUMS:
   Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
   Wrap: 9cc7da7551bb81d0846cb3df9fb624c6c32d267d
 
-PODFILE CHECKSUM: a7c369a9f59932b93ef4c4c12e6ed9cfd41c4cf3
+PODFILE CHECKSUM: 20e736ceb9cb4b4b69fa7f000342e175567e12d8
 
 COCOAPODS: 1.4.0
