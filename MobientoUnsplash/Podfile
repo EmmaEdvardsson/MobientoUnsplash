@@ -8,6 +8,8 @@ def common_pods
     #JSON Processing
     pod 'Wrap', '~> 2.1'
     pod 'Unbox', '~> 2.4'
+    #Reactive programming
+    pod 'RxSwift', '~> 4.0.0'
 end
 
 def ui_pods
