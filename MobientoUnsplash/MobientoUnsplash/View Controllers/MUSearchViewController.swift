@@ -14,10 +14,11 @@ import DZNEmptyDataSet
 class MUSearchViewController: UIViewController {
     @IBOutlet weak var photoSearchBar: UISearchBar!
     @IBOutlet weak var searchResultCollectionView: UICollectionView!
+    @IBOutlet weak var textStackView: UIStackView!
+    @IBOutlet weak var searchResultLabel: UILabel!
     var pageNumber = 1
     var searchMore: Bool = true
     var photosArray: [MUPhoto] = []
-    
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -28,21 +29,29 @@ class MUSearchViewController: UIViewController {
     }
     
     func setupAppearance() {
-        photoSearchBar.placeholder = "Write your search word here"
-        photoSearchBar.barTintColor = UIColor.muGreen()
         searchResultCollectionView.emptyDataSetSource = self
         searchResultCollectionView.emptyDataSetDelegate = self
+        photoSearchBar.placeholder = "Write your search word here"
+        photoSearchBar.barTintColor = UIColor.muGreen()
+        searchResultLabel.textColor = UIColor.muGreen()
+        textStackView.isHidden = true
     }
     
     fileprivate func setupBindings() {
         photoSearchBar.rx.text
-            .throttle(0.3, scheduler: MainScheduler.instance)
+            .throttle(0.1, scheduler: MainScheduler.instance)
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { (searchText) in
-                guard let searchText = searchText, !searchText.isEmpty else { return }
+                guard let searchText = searchText else { return }
                 
                 self.photosArray.removeAll()
-                self.search(withText: searchText)
+                if !searchText.isEmpty {
+                    self.search(withText: searchText)
+                } else {
+                    self.textStackView.isHidden = true
+                    self.searchResultCollectionView.reloadData()
+                }
+                
             }).disposed(by: disposeBag)
     }
     
@@ -59,6 +68,8 @@ class MUSearchViewController: UIViewController {
             if let photos = searchResult.photos {
                 self.photosArray.append(contentsOf: photos)
                 self.searchResultCollectionView.reloadData()
+                self.textStackView.isHidden = false
+                self.searchResultLabel.text = "\(searchResult.total) images found for \(withText)"
             }
         })
     }

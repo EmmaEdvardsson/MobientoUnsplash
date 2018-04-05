@@ -8,23 +8,31 @@
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
-            continueAfterRunningActions = "Yes"
+            continueAfterRunningActions = "No"
             filePath = "MobientoUnsplash/View Controllers/MUSearchViewController.swift"
-            timestampString = "544633214.0940239"
+            timestampString = "544634778.7577699"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "search(withText:)"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "setupAppearance()"
             landmarkType = "7">
-            <Actions>
-               <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
-                  <ActionContent
-                     consoleCommand = "po searchResult.total">
-                  </ActionContent>
-               </BreakpointActionProxy>
-            </Actions>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MobientoUnsplash/View Controllers/MUSearchViewController.swift"
+            timestampString = "544634778.758417"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
