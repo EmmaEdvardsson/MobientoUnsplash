@@ -9,8 +9,8 @@
 import Foundation
 
 class MUAppManager {
-    static func getSearchResults(forSearchText: String, success: () -> Void) {
-        MUApiClient().getSearchResults(forSearchText: "Horse", success: success, failure: {
+    static func getSearchResults(forSearchText: String, page: Int, success: () -> Void) {
+        MUApiClient().getSearchResults(forSearchText: "Horse", page: page, success: success, failure: {
             print("Show error message")
         })
     }

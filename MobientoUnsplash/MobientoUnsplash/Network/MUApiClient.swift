@@ -13,9 +13,10 @@ class MUApiClient {
     let kBaseUrl = "https://api.unsplash.com"
     let searchPhotosApiPath = "/search/photos"
     let kUnsplashAccessKey = "053f65a6d645dddebaa96dc0ca512a241cf3909c7299d911251579a68b9d5f06"
+    let kPageSize: Int = 12
     
-    func getSearchResults(forSearchText: String, success: () -> Void, failure: () -> Void) {
-        let params = "?query=\(forSearchText)&orientation=squarish"
+    func getSearchResults(forSearchText: String, page: Int = 1, success: () -> Void, failure: () -> Void) {
+        let params = "?query=\(forSearchText)&page=\(page)&per_page=\(kPageSize)&orientation=squarish"
         
         guard let url = URL(string: kBaseUrl+searchPhotosApiPath+params) else {
             failure()

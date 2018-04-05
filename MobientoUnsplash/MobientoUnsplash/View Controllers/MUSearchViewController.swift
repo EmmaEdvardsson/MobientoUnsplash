@@ -12,6 +12,7 @@ import RxSwift
 class MUSearchViewController: UIViewController {
     @IBOutlet weak var photoSearchBar: UISearchBar!
     @IBOutlet weak var searchResultCollectionView: UICollectionView!
+    var pageNumber = 1
     
     let disposeBag = DisposeBag()
     
@@ -22,7 +23,7 @@ class MUSearchViewController: UIViewController {
     }
     
     @IBAction func runRequest(_ sender: Any) {
-        MUAppManager.getSearchResults(forSearchText: "", success: { })
+        MUAppManager.getSearchResults(forSearchText: "", page: pageNumber, success: { })
     }
 }
 
