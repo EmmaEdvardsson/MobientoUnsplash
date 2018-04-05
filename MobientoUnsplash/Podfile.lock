@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.7.0)
   - FXKeychain (1.5.3)
+  - Kingfisher (4.5.0)
   - RxSwift (4.0.0)
   - SVProgressHUD (2.2.5)
   - Unbox (2.5.0)
@@ -9,6 +10,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - FXKeychain (~> 1.5)
+  - Kingfisher (~> 4.5.0)
   - RxSwift (~> 4.0.0)
   - SVProgressHUD (~> 2.0)
   - Unbox (~> 2.4)
@@ -17,11 +19,12 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   FXKeychain: 2fe54573946ffef634f4e2a2851e6c8f4ea15e76
+  Kingfisher: 26ae0473102b77b575da51960c932431e3745407
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
   Wrap: 9cc7da7551bb81d0846cb3df9fb624c6c32d267d
 
-PODFILE CHECKSUM: e2a654bd5f3a464a309eacc132e6e6c2d341fa11
+PODFILE CHECKSUM: b380b19d5d76d772a08e117a221fc5bb3534534e
 
 COCOAPODS: 1.4.0
