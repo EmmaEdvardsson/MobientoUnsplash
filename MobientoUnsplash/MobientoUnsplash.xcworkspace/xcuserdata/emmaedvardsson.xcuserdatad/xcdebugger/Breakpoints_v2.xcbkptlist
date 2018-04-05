@@ -8,15 +8,23 @@
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MobientoUnsplash/Utils/MUAppHelper.swift"
-            timestampString = "544630878.349362"
+            continueAfterRunningActions = "Yes"
+            filePath = "MobientoUnsplash/View Controllers/MUSearchViewController.swift"
+            timestampString = "544633214.0940239"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "showSpinner()"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "search(withText:)"
             landmarkType = "7">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "po searchResult.total">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
