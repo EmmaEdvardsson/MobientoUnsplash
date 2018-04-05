@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C8878ED20760134001B3117 /* MUSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8878EC20760134001B3117 /* MUSearchViewController.swift */; };
+		7C8878F120760594001B3117 /* SearchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8878F320760594001B3117 /* SearchView.storyboard */; };
+		7C8878F52076060C001B3117 /* MUConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8878F42076060C001B3117 /* MUConstants.swift */; };
 		7CCFBB8F2075FAAA00D69698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCFBB8E2075FAAA00D69698 /* AppDelegate.swift */; };
-		7CCFBB912075FAAA00D69698 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCFBB902075FAAA00D69698 /* ViewController.swift */; };
-		7CCFBB942075FAAA00D69698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCFBB922075FAAA00D69698 /* Main.storyboard */; };
 		7CCFBB962075FAAA00D69698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CCFBB952075FAAA00D69698 /* Assets.xcassets */; };
 		7CCFBB992075FAAA00D69698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCFBB972075FAAA00D69698 /* LaunchScreen.storyboard */; };
 		7CCFBBA42075FAAA00D69698 /* MobientoUnsplashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCFBBA32075FAAA00D69698 /* MobientoUnsplashTests.swift */; };
@@ -29,10 +30,11 @@
 /* Begin PBXFileReference section */
 		177F59E303A3A06D305F88C6 /* Pods-MobientoUnsplash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobientoUnsplash.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobientoUnsplash/Pods-MobientoUnsplash.release.xcconfig"; sourceTree = "<group>"; };
 		185107725113CBAC2B7E600B /* Pods_MobientoUnsplash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobientoUnsplash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C8878EC20760134001B3117 /* MUSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUSearchViewController.swift; sourceTree = "<group>"; };
+		7C8878F220760594001B3117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SearchView.storyboard; sourceTree = "<group>"; };
+		7C8878F42076060C001B3117 /* MUConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUConstants.swift; sourceTree = "<group>"; };
 		7CCFBB8B2075FAAA00D69698 /* MobientoUnsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobientoUnsplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCFBB8E2075FAAA00D69698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7CCFBB902075FAAA00D69698 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7CCFBB932075FAAA00D69698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CCFBB952075FAAA00D69698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CCFBB982075FAAA00D69698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CCFBB9A2075FAAA00D69698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,11 +95,12 @@
 			isa = PBXGroup;
 			children = (
 				7CCFBB8E2075FAAA00D69698 /* AppDelegate.swift */,
-				7CCFBB902075FAAA00D69698 /* ViewController.swift */,
-				7CCFBB922075FAAA00D69698 /* Main.storyboard */,
 				7CCFBB952075FAAA00D69698 /* Assets.xcassets */,
 				7CCFBB972075FAAA00D69698 /* LaunchScreen.storyboard */,
 				7CCFBB9A2075FAAA00D69698 /* Info.plist */,
+				7C8878F320760594001B3117 /* SearchView.storyboard */,
+				7C8878EC20760134001B3117 /* MUSearchViewController.swift */,
+				7C8878F42076060C001B3117 /* MUConstants.swift */,
 			);
 			path = MobientoUnsplash;
 			sourceTree = "<group>";
@@ -207,8 +210,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CCFBB992075FAAA00D69698 /* LaunchScreen.storyboard in Resources */,
+				7C8878F120760594001B3117 /* SearchView.storyboard in Resources */,
 				7CCFBB962075FAAA00D69698 /* Assets.xcassets in Resources */,
-				7CCFBB942075FAAA00D69698 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CCFBB912075FAAA00D69698 /* ViewController.swift in Sources */,
+				7C8878F52076060C001B3117 /* MUConstants.swift in Sources */,
+				7C8878ED20760134001B3117 /* MUSearchViewController.swift in Sources */,
 				7CCFBB8F2075FAAA00D69698 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,12 +316,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7CCFBB922075FAAA00D69698 /* Main.storyboard */ = {
+		7C8878F320760594001B3117 /* SearchView.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7CCFBB932075FAAA00D69698 /* Base */,
+				7C8878F220760594001B3117 /* Base */,
 			);
-			name = Main.storyboard;
+			name = SearchView.storyboard;
 			sourceTree = "<group>";
 		};
 		7CCFBB972075FAAA00D69698 /* LaunchScreen.storyboard */ = {
