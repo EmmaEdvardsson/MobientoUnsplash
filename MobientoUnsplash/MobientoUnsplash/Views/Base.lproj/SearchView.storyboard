@@ -74,7 +74,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t5B-by-uff">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grV-2O-g6L">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="grV-2O-g6L">
                                                 <rect key="frame" x="10" y="10" width="355" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -109,9 +109,9 @@
                     </view>
                     <connections>
                         <outlet property="photoSearchBar" destination="wpO-pb-beo" id="9ol-Km-RVC"/>
+                        <outlet property="resultTextView" destination="t5B-by-uff" id="Idm-6Y-Lwk"/>
                         <outlet property="searchResultCollectionView" destination="AcN-WR-cpu" id="qg2-zf-T91"/>
                         <outlet property="searchResultLabel" destination="grV-2O-g6L" id="QJ3-XS-Elv"/>
-                        <outlet property="textStackView" destination="jag-XP-67i" id="gs5-9G-LDj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rFh-Q4-HxD" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -14,7 +14,7 @@ import DZNEmptyDataSet
 class MUSearchViewController: UIViewController {
     @IBOutlet weak var photoSearchBar: UISearchBar!
     @IBOutlet weak var searchResultCollectionView: UICollectionView!
-    @IBOutlet weak var textStackView: UIStackView!
+    @IBOutlet weak var resultTextView: UIView!
     @IBOutlet weak var searchResultLabel: UILabel!
     var pageNumber = 1
     var searchMore: Bool = true
@@ -29,12 +29,12 @@ class MUSearchViewController: UIViewController {
     }
     
     func setupAppearance() {
+        resultTextView.isHidden = true
         searchResultCollectionView.emptyDataSetSource = self
         searchResultCollectionView.emptyDataSetDelegate = self
         photoSearchBar.placeholder = "Write your search word here"
         photoSearchBar.barTintColor = UIColor.muGreen()
         searchResultLabel.textColor = UIColor.muGreen()
-        textStackView.isHidden = true
     }
     
     fileprivate func setupBindings() {
@@ -48,7 +48,7 @@ class MUSearchViewController: UIViewController {
                 if !searchText.isEmpty {
                     self.search(withText: searchText)
                 } else {
-                    self.textStackView.isHidden = true
+                    self.resultTextView.isHidden = true
                     self.searchResultCollectionView.reloadData()
                 }
                 
@@ -68,7 +68,7 @@ class MUSearchViewController: UIViewController {
             if let photos = searchResult.photos {
                 self.photosArray.append(contentsOf: photos)
                 self.searchResultCollectionView.reloadData()
-                self.textStackView.isHidden = false
+                self.resultTextView.isHidden = false
                 self.searchResultLabel.text = "\(searchResult.total) images found for \(withText)"
             }
         })

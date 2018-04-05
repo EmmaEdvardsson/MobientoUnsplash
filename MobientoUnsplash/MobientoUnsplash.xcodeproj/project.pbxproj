@@ -95,7 +95,7 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		7C8878F720760B84001B3117 /* View Controllers */ = {
+		7C8878F720760B84001B3117 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				7C8878F320760594001B3117 /* SearchView.storyboard */,
@@ -103,15 +103,15 @@
 				7C887903207621E7001B3117 /* MUPhotoCollectionViewCell.swift */,
 				7C88790720763FD9001B3117 /* MUFocusViewController.swift */,
 			);
-			path = "View Controllers";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		7C8878F820760B97001B3117 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				7C8878F42076060C001B3117 /* MUConstants.swift */,
 				7C88790B2076639C001B3117 /* MUAppHelper.swift */,
 				7C88790D207663D4001B3117 /* MUColor.swift */,
+				7C8878F42076060C001B3117 /* MUConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -158,7 +158,7 @@
 			children = (
 				7CCFBB9A2075FAAA00D69698 /* Info.plist */,
 				7CCFBB8E2075FAAA00D69698 /* AppDelegate.swift */,
-				7C8878F720760B84001B3117 /* View Controllers */,
+				7C8878F720760B84001B3117 /* Views */,
 				7C8878F620760B78001B3117 /* Network */,
 				7C8878FB20761055001B3117 /* Managers */,
 				7C8878FE20761881001B3117 /* Models */,

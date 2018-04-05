@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MobientoUnsplash/View Controllers/MUSearchViewController.swift"
-            timestampString = "544634778.7577699"
+            filePath = "MobientoUnsplash/Views/MUSearchViewController.swift"
+            timestampString = "544635945.362429"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "setupAppearance()"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "title(forEmptyDataSet:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MobientoUnsplash/View Controllers/MUSearchViewController.swift"
-            timestampString = "544634778.758417"
+            filePath = "MobientoUnsplash/Views/MUSearchViewController.swift"
+            timestampString = "544635945.363025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "setupAppearance()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
