@@ -11,7 +11,7 @@ import Unbox
 
 class MUAppManager {
     static func getSearchResults(forSearchText: String, page: Int, success: @escaping (MUSearchResult) -> Void) {
-        MUApiClient().getSearchResults(forSearchText: "Horse", page: page, success: { result in
+        MUApiClient().getSearchResults(forSearchText: forSearchText, page: page, success: { result in
             do {
                 if let data = result.data {
                     let searchResult: MUSearchResult = try unbox(data: data)

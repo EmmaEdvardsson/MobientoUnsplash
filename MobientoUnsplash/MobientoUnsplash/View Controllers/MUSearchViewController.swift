@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 class MUSearchViewController: UIViewController {
     @IBOutlet weak var photoSearchBar: UISearchBar!
@@ -16,34 +17,49 @@ class MUSearchViewController: UIViewController {
     var searchMore: Bool = true
     var photosArray: [MUPhoto] = []
     let kPhotoCellIdentifier = "PhotoCellIdentifier"
+    let kNumberOfCellsFromBottom = 6
     
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupAppearance()
+        setupBindings()
+    }
+    
+    func setupAppearance() {
         photoSearchBar.placeholder = "Write your search word here"
     }
     
-    @IBAction func runRequest(_ sender: Any) {
-        MUAppManager.getSearchResults(forSearchText: "", page: pageNumber, success: { searchResult in
+    fileprivate func setupBindings() {
+        photoSearchBar.rx.text
+            .throttle(0.3, scheduler: MainScheduler.instance)
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { (searchText) in
+                guard let searchText = searchText, !searchText.isEmpty else { return }
+                
+                self.photosArray.removeAll()
+                self.search(withText: searchText)
+            }).disposed(by: disposeBag)
+    }
+    
+    func search(withText: String) {
+        MUAppManager.getSearchResults(forSearchText: withText, page: self.pageNumber, success: { searchResult in
             if searchResult.totalPages > self.pageNumber {
                 self.pageNumber += 1
                 self.searchMore = true
-                self.searchResultCollectionView.reloadData()
-                guard let photos = searchResult.photos else { return }
-                self.photosArray.append(contentsOf: photos)
             } else {
                 self.pageNumber = 1
                 self.searchMore = false
-                self.photosArray = []
+            }
+            
+            if let photos = searchResult.photos {
+                self.photosArray.append(contentsOf: photos)
                 self.searchResultCollectionView.reloadData()
             }
         })
     }
-}
-
-extension MUSearchViewController: UISearchControllerDelegate {
 }
 
 extension MUSearchViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -63,5 +79,12 @@ extension MUSearchViewController: UICollectionViewDelegate, UICollectionViewData
         cell.setupCell(withPhoto: photosArray[indexPath.row])
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.row == (photosArray.count - kNumberOfCellsFromBottom) && searchMore {
+            guard let searchText = photoSearchBar.text, !searchText.isEmpty else { return }
+            self.search(withText: searchText)
+        }
     }
 }

@@ -36,13 +36,13 @@
 		177F59E303A3A06D305F88C6 /* Pods-MobientoUnsplash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobientoUnsplash.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobientoUnsplash/Pods-MobientoUnsplash.release.xcconfig"; sourceTree = "<group>"; };
 		185107725113CBAC2B7E600B /* Pods_MobientoUnsplash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobientoUnsplash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8878EC20760134001B3117 /* MUSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUSearchViewController.swift; sourceTree = "<group>"; };
-		7C8878F220760594001B3117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SearchView.storyboard; sourceTree = "<group>"; };
 		7C8878F42076060C001B3117 /* MUConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUConstants.swift; sourceTree = "<group>"; };
 		7C8878F920760C21001B3117 /* MUApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUApiClient.swift; sourceTree = "<group>"; };
 		7C8878FC2076106A001B3117 /* MUAppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUAppManager.swift; sourceTree = "<group>"; };
 		7C8878FF20761919001B3117 /* MUPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUPhoto.swift; sourceTree = "<group>"; };
 		7C88790120761947001B3117 /* MUSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUSearchResult.swift; sourceTree = "<group>"; };
 		7C887903207621E7001B3117 /* MUPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		7C88790620762F32001B3117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SearchView.storyboard; sourceTree = "<group>"; };
 		7CCFBB8B2075FAAA00D69698 /* MobientoUnsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobientoUnsplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCFBB8E2075FAAA00D69698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CCFBB952075FAAA00D69698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -290,6 +290,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FXKeychain/FXKeychain.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
@@ -300,6 +301,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FXKeychain.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
@@ -383,7 +385,7 @@
 		7C8878F320760594001B3117 /* SearchView.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7C8878F220760594001B3117 /* Base */,
+				7C88790620762F32001B3117 /* Base */,
 			);
 			name = SearchView.storyboard;
 			sourceTree = "<group>";

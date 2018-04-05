@@ -21,7 +21,7 @@ struct MUPhoto {
 
 extension MUPhoto: Unboxable {
     init(unboxer: Unboxer) throws {
-        self.thumbnailUrl = try unboxer.unbox(keyPath: MUPhotoKeys.thumbnailUrl.rawValue)
-        self.regularUrl = try unboxer.unbox(keyPath: MUPhotoKeys.regularUrl.rawValue)
+        self.thumbnailUrl = unboxer.unbox(keyPath: MUPhotoKeys.thumbnailUrl.rawValue)
+        self.regularUrl = unboxer.unbox(keyPath: MUPhotoKeys.regularUrl.rawValue)
     }
 }

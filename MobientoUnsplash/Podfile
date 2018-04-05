@@ -12,6 +12,7 @@ def common_pods
     pod 'Kingfisher', '~> 4.5.0'
     #Reactive programming
     pod 'RxSwift', '~> 4.0.0'
+    pod 'RxCocoa',    '~> 4.0'
 end
 
 def ui_pods

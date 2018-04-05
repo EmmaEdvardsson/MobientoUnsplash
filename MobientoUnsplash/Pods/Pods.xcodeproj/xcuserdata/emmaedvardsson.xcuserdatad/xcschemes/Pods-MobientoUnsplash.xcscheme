@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D15EBEE3808ED759FFE5CB14D67E696A"
+               BlueprintIdentifier = "01479172BD39B02CD8080E3EC1638A3B"
                BuildableName = "Pods_MobientoUnsplash.framework"
                BlueprintName = "Pods-MobientoUnsplash"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D15EBEE3808ED759FFE5CB14D67E696A"
+            BlueprintIdentifier = "01479172BD39B02CD8080E3EC1638A3B"
             BuildableName = "Pods_MobientoUnsplash.framework"
             BlueprintName = "Pods-MobientoUnsplash"
             ReferencedContainer = "container:Pods.xcodeproj">
