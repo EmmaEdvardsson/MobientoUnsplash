@@ -15,6 +15,7 @@
 		7C88790020761919001B3117 /* MUPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8878FF20761919001B3117 /* MUPhoto.swift */; };
 		7C88790220761947001B3117 /* MUSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88790120761947001B3117 /* MUSearchResult.swift */; };
 		7C887904207621E7001B3117 /* MUPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C887903207621E7001B3117 /* MUPhotoCollectionViewCell.swift */; };
+		7C88790820763FD9001B3117 /* MUFocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88790720763FD9001B3117 /* MUFocusViewController.swift */; };
 		7CCFBB8F2075FAAA00D69698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCFBB8E2075FAAA00D69698 /* AppDelegate.swift */; };
 		7CCFBB962075FAAA00D69698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CCFBB952075FAAA00D69698 /* Assets.xcassets */; };
 		7CCFBB992075FAAA00D69698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCFBB972075FAAA00D69698 /* LaunchScreen.storyboard */; };
@@ -43,6 +44,7 @@
 		7C88790120761947001B3117 /* MUSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUSearchResult.swift; sourceTree = "<group>"; };
 		7C887903207621E7001B3117 /* MUPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		7C88790620762F32001B3117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SearchView.storyboard; sourceTree = "<group>"; };
+		7C88790720763FD9001B3117 /* MUFocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUFocusViewController.swift; sourceTree = "<group>"; };
 		7CCFBB8B2075FAAA00D69698 /* MobientoUnsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobientoUnsplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCFBB8E2075FAAA00D69698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CCFBB952075FAAA00D69698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				7C8878F320760594001B3117 /* SearchView.storyboard */,
 				7C8878EC20760134001B3117 /* MUSearchViewController.swift */,
 				7C887903207621E7001B3117 /* MUPhotoCollectionViewCell.swift */,
+				7C88790720763FD9001B3117 /* MUFocusViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				7C8878ED20760134001B3117 /* MUSearchViewController.swift in Sources */,
 				7C88790020761919001B3117 /* MUPhoto.swift in Sources */,
 				7C8878FD2076106A001B3117 /* MUAppManager.swift in Sources */,
+				7C88790820763FD9001B3117 /* MUFocusViewController.swift in Sources */,
 				7CCFBB8F2075FAAA00D69698 /* AppDelegate.swift in Sources */,
 				7C88790220761947001B3117 /* MUSearchResult.swift in Sources */,
 				7C887904207621E7001B3117 /* MUPhotoCollectionViewCell.swift in Sources */,

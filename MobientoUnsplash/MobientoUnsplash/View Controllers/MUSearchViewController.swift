@@ -87,4 +87,13 @@ extension MUSearchViewController: UICollectionViewDelegate, UICollectionViewData
             self.search(withText: searchText)
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let focusStoryboard =  UIStoryboard(name: MUViewControllers.focusView.storyboardName, bundle: nil)
+        guard let focusViewController = focusStoryboard.instantiateViewController(withIdentifier: MUViewControllers.focusView.storyboardIdentifier) as? MUFocusViewController
+            else { return }
+        
+        focusViewController.imageUrl = photosArray[indexPath.row].regularUrl
+        self.present(focusViewController, animated: true, completion: nil)
+    }
 }

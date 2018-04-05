@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "Yes"
             filePath = "MobientoUnsplash/View Controllers/MUSearchViewController.swift"
-            timestampString = "544619447.711338"
+            timestampString = "544622355.754228"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "search(withText:)"
             landmarkType = "7">
             <Actions>

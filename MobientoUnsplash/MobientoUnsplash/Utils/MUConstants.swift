@@ -10,16 +10,18 @@ import Foundation
 
 enum MUViewControllers {
     case searchView
+    case focusView
     
     var storyboardName: String {
         switch self {
-        case .searchView: return "SearchView"
+        case .searchView, .focusView: return "SearchView"
         }
     }
     
     var storyboardIdentifier: String {
         switch self {
         case .searchView: return "SearchView"
+        case .focusView: return "FocusView"
         }
     }
 }
