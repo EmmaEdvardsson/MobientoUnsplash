@@ -17,8 +17,6 @@ class MUSearchViewController: UIViewController {
     var pageNumber = 1
     var searchMore: Bool = true
     var photosArray: [MUPhoto] = []
-    let kPhotoCellIdentifier = "PhotoCellIdentifier"
-    let kNumberOfCellsFromBottom = 6
     
     let disposeBag = DisposeBag()
     

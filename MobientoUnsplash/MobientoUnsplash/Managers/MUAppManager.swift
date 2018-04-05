@@ -8,9 +8,11 @@
 
 import Foundation
 import Unbox
+import SVProgressHUD
 
 class MUAppManager {
     static func getSearchResults(forSearchText: String, page: Int, success: @escaping (MUSearchResult) -> Void) {
+        MUAppHelper().showSpinner()
         MUApiClient().getSearchResults(forSearchText: forSearchText, page: page, success: { result in
             do {
                 if let data = result.data {
@@ -20,7 +22,9 @@ class MUAppManager {
             } catch {
                 print("Error parsing search result response: \(error)")
             }
+            MUAppHelper().hideSpinner()
         }, failure: {
+            MUAppHelper().hideSpinner()
             print("Show error message")
         })
     }

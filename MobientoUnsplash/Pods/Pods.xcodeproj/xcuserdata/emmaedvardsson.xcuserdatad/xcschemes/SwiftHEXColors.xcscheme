@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FD1C01BCED4F8B57AAF4E31D56C44968"
-               BlueprintName = "FXKeychain"
+               BlueprintIdentifier = "D508608CB49A1E1B5EEAE4DC60926888"
+               BlueprintName = "SwiftHEXColors"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "FXKeychain.framework">
+               BuildableName = "SwiftHEXColors.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

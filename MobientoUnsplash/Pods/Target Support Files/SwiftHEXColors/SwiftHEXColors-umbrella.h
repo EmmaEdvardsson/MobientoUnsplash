@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "FXKeychain.h"
+#import "SwiftHEXColors.h"
 
-FOUNDATION_EXPORT double FXKeychainVersionNumber;
-FOUNDATION_EXPORT const unsigned char FXKeychainVersionString[];
+FOUNDATION_EXPORT double SwiftHEXColorsVersionNumber;
+FOUNDATION_EXPORT const unsigned char SwiftHEXColorsVersionString[];
 

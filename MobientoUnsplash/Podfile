@@ -4,7 +4,6 @@ use_frameworks!
 def common_pods
     #Networking
     pod 'Alamofire', '~> 4.0'
-    pod 'FXKeychain', '~> 1.5'
     #JSON Processing
     pod 'Wrap', '~> 2.1'
     pod 'Unbox', '~> 2.4'
@@ -18,6 +17,7 @@ end
 def ui_pods
     pod 'SVProgressHUD', '~> 2.0'
     pod 'DZNEmptyDataSet', '~> 1.8'
+     pod 'SwiftHEXColors', '~> 1.1'
 end
 
 target 'MobientoUnsplash' do

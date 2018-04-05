@@ -6,8 +6,10 @@
 //  Copyright © 2018 Emma Edvardsson. All rights reserved.
 //
 
-import Foundation
+//MARK: - Access Key
+let kUnsplashAccessKey = "053f65a6d645dddebaa96dc0ca512a241cf3909c7299d911251579a68b9d5f06"
 
+//MARK: - Identifiers
 enum MUViewControllers {
     case searchView
     case focusView
@@ -25,3 +27,10 @@ enum MUViewControllers {
         }
     }
 }
+
+//MARK: - Cell Identifiers
+let kPhotoCellIdentifier = "PhotoCellIdentifier"
+
+//MARK: - Other
+let kPageSize: Int = 12
+let kNumberOfCellsFromBottom = 6
