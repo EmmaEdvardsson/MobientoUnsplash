@@ -98,6 +98,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbnailPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="2mx-AA-mcb">
+                                <rect key="frame" x="10" y="283" width="375" height="100"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Y2-Uk-Qrs">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
@@ -117,6 +120,9 @@
                         <constraints>
                             <constraint firstItem="5Y2-Uk-Qrs" firstAttribute="leading" secondItem="5Sb-Sd-B3F" secondAttribute="leading" id="3wa-73-hVd"/>
                             <constraint firstItem="5Y2-Uk-Qrs" firstAttribute="trailing" secondItem="5Sb-Sd-B3F" secondAttribute="trailing" id="B8W-XS-XU1"/>
+                            <constraint firstAttribute="trailing" secondItem="2mx-AA-mcb" secondAttribute="trailing" constant="-10" id="CBw-8t-Yxb"/>
+                            <constraint firstItem="2mx-AA-mcb" firstAttribute="centerY" secondItem="ff8-h8-gPo" secondAttribute="centerY" id="F5i-zW-nz1"/>
+                            <constraint firstItem="2mx-AA-mcb" firstAttribute="leading" secondItem="5Sb-Sd-B3F" secondAttribute="leading" constant="10" id="LEP-u6-F9P"/>
                             <constraint firstItem="5Sb-Sd-B3F" firstAttribute="bottom" secondItem="5Y2-Uk-Qrs" secondAttribute="bottom" id="M40-Td-wwL"/>
                             <constraint firstItem="nlc-wE-Xcv" firstAttribute="leading" secondItem="5Sb-Sd-B3F" secondAttribute="leading" constant="20" id="btH-b6-wCq"/>
                             <constraint firstItem="5Y2-Uk-Qrs" firstAttribute="top" secondItem="5Sb-Sd-B3F" secondAttribute="top" id="hra-ee-DWg"/>
