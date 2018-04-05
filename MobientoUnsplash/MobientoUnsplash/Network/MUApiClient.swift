@@ -15,7 +15,7 @@ class MUApiClient {
     let kUnsplashAccessKey = "053f65a6d645dddebaa96dc0ca512a241cf3909c7299d911251579a68b9d5f06"
     let kPageSize: Int = 12
     
-    func getSearchResults(forSearchText: String, page: Int = 1, success: () -> Void, failure: () -> Void) {
+    func getSearchResults(forSearchText: String, page: Int = 1, success: @escaping (DataResponse<Any>) -> Void, failure: @escaping () -> Void) {
         let params = "?query=\(forSearchText)&page=\(page)&per_page=\(kPageSize)&orientation=squarish"
         
         guard let url = URL(string: kBaseUrl+searchPhotosApiPath+params) else {
@@ -28,7 +28,12 @@ class MUApiClient {
         urlRequest.setValue("Client-ID \(kUnsplashAccessKey) ", forHTTPHeaderField: "Authorization")
         
         Alamofire.request(urlRequest).responseJSON { response in
-            print("I've got some results!")
+            if response.result.isSuccess {
+                print("I've got some results!")
+                success(response)
+            } else {
+                failure()
+            }
         }
     }
 }

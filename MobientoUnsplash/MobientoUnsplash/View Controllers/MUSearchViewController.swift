@@ -23,7 +23,9 @@ class MUSearchViewController: UIViewController {
     }
     
     @IBAction func runRequest(_ sender: Any) {
-        MUAppManager.getSearchResults(forSearchText: "", page: pageNumber, success: { })
+        MUAppManager.getSearchResults(forSearchText: "", page: pageNumber, success: { searchResult in
+            
+        })
     }
 }
 

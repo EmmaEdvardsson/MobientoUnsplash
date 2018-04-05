@@ -12,6 +12,8 @@
 		7C8878F52076060C001B3117 /* MUConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8878F42076060C001B3117 /* MUConstants.swift */; };
 		7C8878FA20760C21001B3117 /* MUApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8878F920760C21001B3117 /* MUApiClient.swift */; };
 		7C8878FD2076106A001B3117 /* MUAppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8878FC2076106A001B3117 /* MUAppManager.swift */; };
+		7C88790020761919001B3117 /* MUPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8878FF20761919001B3117 /* MUPhoto.swift */; };
+		7C88790220761947001B3117 /* MUSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88790120761947001B3117 /* MUSearchResult.swift */; };
 		7CCFBB8F2075FAAA00D69698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCFBB8E2075FAAA00D69698 /* AppDelegate.swift */; };
 		7CCFBB962075FAAA00D69698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CCFBB952075FAAA00D69698 /* Assets.xcassets */; };
 		7CCFBB992075FAAA00D69698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCFBB972075FAAA00D69698 /* LaunchScreen.storyboard */; };
@@ -37,6 +39,8 @@
 		7C8878F42076060C001B3117 /* MUConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUConstants.swift; sourceTree = "<group>"; };
 		7C8878F920760C21001B3117 /* MUApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUApiClient.swift; sourceTree = "<group>"; };
 		7C8878FC2076106A001B3117 /* MUAppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUAppManager.swift; sourceTree = "<group>"; };
+		7C8878FF20761919001B3117 /* MUPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUPhoto.swift; sourceTree = "<group>"; };
+		7C88790120761947001B3117 /* MUSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUSearchResult.swift; sourceTree = "<group>"; };
 		7CCFBB8B2075FAAA00D69698 /* MobientoUnsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobientoUnsplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCFBB8E2075FAAA00D69698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CCFBB952075FAAA00D69698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,6 +112,15 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		7C8878FE20761881001B3117 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C8878FF20761919001B3117 /* MUPhoto.swift */,
+				7C88790120761947001B3117 /* MUSearchResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7CCFBB822075FAAA00D69698 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +149,7 @@
 				7C8878F720760B84001B3117 /* View Controllers */,
 				7C8878F620760B78001B3117 /* Network */,
 				7C8878FB20761055001B3117 /* Managers */,
+				7C8878FE20761881001B3117 /* Models */,
 				7C8878F820760B97001B3117 /* Utils */,
 				7CCFBB952075FAAA00D69698 /* Assets.xcassets */,
 				7CCFBB972075FAAA00D69698 /* LaunchScreen.storyboard */,
@@ -333,8 +347,10 @@
 			files = (
 				7C8878F52076060C001B3117 /* MUConstants.swift in Sources */,
 				7C8878ED20760134001B3117 /* MUSearchViewController.swift in Sources */,
+				7C88790020761919001B3117 /* MUPhoto.swift in Sources */,
 				7C8878FD2076106A001B3117 /* MUAppManager.swift in Sources */,
 				7CCFBB8F2075FAAA00D69698 /* AppDelegate.swift in Sources */,
+				7C88790220761947001B3117 /* MUSearchResult.swift in Sources */,
 				7C8878FA20760C21001B3117 /* MUApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
