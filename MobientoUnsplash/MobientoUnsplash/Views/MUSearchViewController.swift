@@ -52,6 +52,7 @@ class MUSearchViewController: UIViewController {
                     self.search(withText: self.previousSearchWord)
                 } else {
                     self.resultTextView.isHidden = true
+                    self.searchResultCollectionView.reloadData()
                 }
                 
             }).disposed(by: disposeBag)
