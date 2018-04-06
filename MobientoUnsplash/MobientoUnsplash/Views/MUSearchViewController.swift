@@ -18,6 +18,7 @@ class MUSearchViewController: UIViewController {
     @IBOutlet weak var searchResultLabel: UILabel!
     var pageNumber = 1
     var searchMore: Bool = true
+    var previousSearchWord = ""
     var photosArray: [MUPhoto] = []
     let disposeBag = DisposeBag()
     
@@ -46,10 +47,11 @@ class MUSearchViewController: UIViewController {
                 
                 self.photosArray.removeAll()
                 if !searchText.isEmpty {
-                    self.search(withText: searchText)
+                    self.previousSearchWord = searchText
+                    self.pageNumber = 1
+                    self.search(withText: self.previousSearchWord)
                 } else {
                     self.resultTextView.isHidden = true
-                    self.searchResultCollectionView.reloadData()
                 }
                 
             }).disposed(by: disposeBag)
@@ -57,6 +59,18 @@ class MUSearchViewController: UIViewController {
     
     func search(withText: String) {
         MUAppManager.getSearchResults(forSearchText: withText, page: self.pageNumber, success: { searchResult in
+            if let photos = searchResult.photos {
+                if self.searchMore {
+                    self.photosArray.append(contentsOf: photos)
+                } else {
+                    self.photosArray = photos
+                }
+                self.searchResultCollectionView.reloadData()
+                self.resultTextView.isHidden = false
+                self.searchResultLabel.text = "\(searchResult.total) images found for \(withText)"
+            }
+            self.searchResultCollectionView.reloadData()
+            
             if searchResult.totalPages > self.pageNumber {
                 self.pageNumber += 1
                 self.searchMore = true
@@ -65,12 +79,6 @@ class MUSearchViewController: UIViewController {
                 self.searchMore = false
             }
             
-            if let photos = searchResult.photos {
-                self.photosArray.append(contentsOf: photos)
-                self.searchResultCollectionView.reloadData()
-                self.resultTextView.isHidden = false
-                self.searchResultLabel.text = "\(searchResult.total) images found for \(withText)"
-            }
         })
     }
     
@@ -100,7 +108,7 @@ extension MUSearchViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if indexPath.row == (photosArray.count - kNumberOfCellsFromBottom) && searchMore {
-            guard let searchText = photoSearchBar.text, !searchText.isEmpty else { return }
+            guard let searchText = photoSearchBar.text, searchText == previousSearchWord, !searchText.isEmpty else { return }
             self.search(withText: searchText)
         }
     }

@@ -14,7 +14,8 @@ class MUApiClient {
     let searchPhotosApiPath = "/search/photos"
     
     func getSearchResults(forSearchText: String, page: Int = 1, success: @escaping (DataResponse<Any>) -> Void, failure: @escaping () -> Void) {
-        let params = "?query=\(forSearchText)&page=\(page)&per_page=\(kPageSize)&orientation=squarish"
+        guard let string = forSearchText.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) else { return failure() }
+        let params = "?query=\(string)&page=\(page)&per_page=\(kPageSize)&orientation=squarish"
         
         guard let url = URL(string: kBaseUrl+searchPhotosApiPath+params) else {
             failure()
